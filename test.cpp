@@ -1,24 +1,16 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
-
-int main(int argc, char** argv) {
-	
-	cout << "Nhap 1 so: ";
-	int a;
-	cin>>a;
-	
-	switch(a){
-		case 1:{
-			cout<<"heng lenh 1";
-			cout<<"heng lenh 2";
-			break;
-		}
-		case 2: cout<<"heng lenh 3";	
-				break;
-		default: cout<<"heng mac dinh"		;
+int main()
+{
+	float T;
+	int n;
+	T = 0;
+	cout<<"Nhap n = ";
+	cin>>n;
+	for(int i = 1; i <= n; i++)
+	{
+		T = T + 1.0/(2*i);
 	}
-	
+	cout<<"Tong T = "<< T;
 	return 0;
-	
 }

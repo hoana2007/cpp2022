@@ -1,22 +1,23 @@
-#include <cstdlib> 
-#include <iostream> 
-#include<iomanip> 
-  
-using namespace std; 
-  
-int main(int argc, char *argv[]) 
-{ 
-      int a,b,c,max;
+//Tim max cua 3 so
 
-     cin>>a>>b>>c;
-
-     max=a; //Gia su gia tri dau tien la lon nhat
-
-     if(max<b) max=b; // So sanh max voi b va cap nhat gia tri lon nhat nay
-
-     if(max<c) max=c; //So sanh max voi c va cap nhat gia tri lon nhat nay
-
-     cout<<"Gia tri lon nhat cua ba so la: "<<max; //Ket qua
-    
-   return 0; 
+#include <iostream>
+using namespace std;
+int main(){
+	int a, b, c, max;
+	cout<<"Nhap gia tri cho 3 so: ";
+	cin>>a>>b>>c;
+	
+	if ((a > b) && (a > c)){
+		max = a;
+	}
+	if ((b > a) && (b > c)){
+		max = b;
+	}
+	if ((c > b) && (c > a)){
+		max = c;
+	}
+	cout<<"So lon nhat la: "<<max;
+	
+	
+return 0;
 }
